@@ -18,5 +18,11 @@ module.exports.policies = {
   ***************************************************************************/
 
   // '*': true,
+  RideController:{
+    '*': 'isLoggedIn'
+    // 'create' : 'isLoggedIn' => esto hace referencia a que solo los enpoints con create tendran la verificacion en el RideController, puede ser cambiado por 'update', 'delete', 'put'
+    // Todas las rutas asociadas al archivo RideController en controllers, estaran sujetos
+    // a la verificacion con el polices isLoggedIn de la carpeta ./policies
+  }
 
 };

@@ -13,7 +13,7 @@ module.exports = {
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
-    email: { type: 'string' },
+    email: { type: 'string', required: true, unique: true},
 
     password: { type: 'string' }
 
@@ -29,4 +29,3 @@ module.exports = {
   },
 
 };
-
